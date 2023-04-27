@@ -6,6 +6,8 @@ import StringInDemo from "./sandbox/components/StringInDemo";
 import Styles from "./sandbox/components/styles/Styles";
 import StyleModule from "./sandbox/components/styles/StyleModule";
 import StyleTest from "./sandbox/components/styles/StyleTest";
+import CardBody from "./cards/components/card/CardBody";
+import Card from "./cards/components/card/Card";
 // import Babel from "./sandbox/Babel";
 
 function App() {
@@ -15,7 +17,9 @@ function App() {
       {/* <Template /> */}
       {/* <Test /> */}
       {/* <StringInDemo /> */}
-      <StyleTest />
+      {/* <StyleTest /> */}
+      {/* <CardBody /> */}
+      <Card />
     </div>
   );
 }
