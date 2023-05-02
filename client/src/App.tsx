@@ -1,25 +1,17 @@
 import React from "react";
 import "./App.css";
-import Template from "./sandbox/components/Template";
-import Test from "./sandbox/components/Test";
-import StringInDemo from "./sandbox/components/StringInDemo";
-import Styles from "./sandbox/components/styles/Styles";
-import StyleModule from "./sandbox/components/styles/StyleModule";
-import StyleTest from "./sandbox/components/styles/StyleTest";
-import CardBody from "./cards/components/card/CardBody";
-import Card from "./cards/components/card/Card";
-// import Babel from "./sandbox/Babel";
+import Layout from "./layout/Layout";
+import { BrowserRouter } from "react-router-dom";
+import Router from "./routes/Router";
 
 function App() {
   return (
     <div className="App">
-      {/* <Babel /> */}
-      {/* <Template /> */}
-      {/* <Test /> */}
-      {/* <StringInDemo /> */}
-      {/* <StyleTest /> */}
-      {/* <CardBody /> */}
-      <Card />
+      <BrowserRouter>
+        <Layout>
+          <Router />
+        </Layout>
+      </BrowserRouter>
     </div>
   );
 }
